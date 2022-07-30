@@ -1,0 +1,15 @@
+package java_exam;
+
+class Car {
+	public String name;
+	protected String color;
+	private int model;
+}
+
+public class ex10 {
+
+}
+
+class SportsCar extends Car {
+	boolean turbo;
+}

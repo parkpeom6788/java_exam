@@ -1,0 +1,12 @@
+package java_exam;
+
+import java.util.Scanner;
+public class gugudan {
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("1부터 9까지의 ");
+		
+	}
+}

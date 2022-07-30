@@ -1,0 +1,23 @@
+package java_exam;
+
+class Parent {
+	
+	int num;
+}
+
+class Child extends Parent {
+	
+	public void run() {
+		
+		System.out.println(num);
+	}
+	
+}
+
+public class ex9 {
+	
+	public static void main(String[] args) {
+		
+		
+	}
+}

@@ -1,0 +1,19 @@
+package java_exam;
+
+import java.util.Scanner;
+
+public class ScannerExam {
+	
+	public static void main(String[] args) {
+		
+		System.out.println("이름 , 주소 , 나이 , 신장을 빈칸으로 분리하여 순서대로 입력");
+		
+		Scanner sc = new Scanner(System.in);
+		
+		String name = sc.next(); // next -> String
+		String addr = sc.next();
+		
+		
+		
+	}
+}

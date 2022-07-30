@@ -1,0 +1,13 @@
+package java_exam;
+
+class Car {
+		
+}
+
+public class ex6 {
+	public static void main(String[] args) {
+		
+		Car c = new Car();
+		
+	}
+}

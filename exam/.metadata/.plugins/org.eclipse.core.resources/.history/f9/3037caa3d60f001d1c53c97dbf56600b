@@ -1,0 +1,23 @@
+package java_exam;
+
+public class ex1 {
+	public static void main(String[] args) {
+		
+		for(int i=0; i<10; i++) {
+			System.out.print(i + " ");
+		}
+			
+		
+		int i = 0 , sum = 0; // sum 도 초기화를 해줘야 한다.
+		do {
+			sum += i;
+			i++;
+		}while(i < 10); // while 문 끝에도 세미콜론을 적어줘야 한다.
+		System.out.println(sum);
+		
+		int sum2 = 0;
+		for()
+		
+		
+	}
+}

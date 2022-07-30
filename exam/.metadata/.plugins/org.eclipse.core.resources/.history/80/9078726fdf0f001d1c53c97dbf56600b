@@ -1,0 +1,12 @@
+package java_exam;
+
+class Apple {}
+class Fox{}
+
+public class Test {
+	
+	public static void main(String[] args) {
+		
+		
+	}
+}

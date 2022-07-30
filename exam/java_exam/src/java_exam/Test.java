@@ -1,0 +1,13 @@
+package java_exam;
+
+class Apple {}
+class Fox{}
+
+public class Test {
+	
+	public static void main(String[] args) {
+		Apple a = new Apple();
+		System.out.println(a instanceof Apple);
+//		System.out.println(a instanceof Fox); 말이안됨
+	}
+}

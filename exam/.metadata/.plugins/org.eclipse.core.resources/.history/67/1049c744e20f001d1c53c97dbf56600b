@@ -1,0 +1,13 @@
+package java_exam;
+
+import java.util.Scanner;
+
+public class SwitchTest {
+	
+	public static void main(String[] args) {
+		int jumsu = 0;
+		Scanner scanner = new Scanner(System.in);
+		
+		
+	}
+}

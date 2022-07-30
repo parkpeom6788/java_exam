@@ -1,0 +1,16 @@
+package java_exam;
+
+public class Person {
+	void name() {}
+	protected void number() {}
+	void weight() {}
+	static void show() {}
+	private void secret() {}
+}
+class Student extends Person {
+	public void name() {}
+    protected void number() {} // 오버라이딩이면 protected void number 다 적어줘야 한다
+	static void weight() {}
+	static void show() {}
+	private void secret() {}
+}

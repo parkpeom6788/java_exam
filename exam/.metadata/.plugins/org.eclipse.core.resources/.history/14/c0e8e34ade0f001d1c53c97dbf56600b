@@ -1,0 +1,18 @@
+package java_exam;
+
+class Parent {
+	
+	
+}
+
+class Child extends Parent {
+	
+}
+
+public class ex9 {
+	
+	public static void main(String[] args) {
+		
+		
+	}
+}

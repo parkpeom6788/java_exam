@@ -1,0 +1,14 @@
+package java_exam;
+
+public class flag2 {
+	
+	public static void main(String[] args) {
+		
+		
+		int hol , jjak;
+		int flag;
+		
+		
+		
+	}
+}

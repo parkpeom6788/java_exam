@@ -1,0 +1,12 @@
+package java_exam;
+
+class Fruit {
+	String color;
+	public Fruit(String color) {
+		this.color = color;
+	}
+}
+public class A extends Fruit {
+	double weight;
+	
+}

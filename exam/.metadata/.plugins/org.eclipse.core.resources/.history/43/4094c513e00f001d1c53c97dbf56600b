@@ -1,0 +1,9 @@
+package java_exam;
+
+public class Parson {
+	void name() {}
+	protected void number() {}
+	void weight() {}
+	
+	
+}
