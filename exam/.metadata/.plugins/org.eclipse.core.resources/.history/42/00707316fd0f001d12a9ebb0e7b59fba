@@ -1,0 +1,44 @@
+package java_exam2;
+
+import java.util.Scanner;
+
+public class ex3 {
+	Scanner sc;
+	
+	public ex3() {
+		sc = new Scanner(System.in);
+		System.out.print("국어 점수 : ");
+		System.out.print("영어 점수 : ");
+	}
+	public void setMessage(String message) {
+		String menu = sc.next();
+		
+	}
+	public static void main(String[] args) {
+		ex3 ex = new ex3();
+		Scanner sc = new Scanner(System.in);
+		System.out.print("국어 점수 : ");
+		int korea = sc.nextInt();
+		System.out.print("영어 점수 : ");
+		int eng = sc.nextInt();
+		System.out.print("수학 점수 : ");
+		int math = sc.nextInt();
+		String grade = "";
+		int sum = korea + eng + math;
+		switch((sum / 3) / 10 ) {
+			
+		case 10: case 9:
+			grade = "A"; break;
+		case 8:
+			grade = "B"; break;
+		case 7:
+			grade = "C"; break;
+		case 6:
+			grade = "D"; break;
+		default :
+			grade = "F";
+		}
+		
+		System.out.println("학점 계산 결과 : " + grade );
+	}
+}

@@ -1,0 +1,58 @@
+package java_exam2;
+
+import java.io.IOException;
+import java.util.Scanner;
+
+public class 중첩for문 {
+	
+	public static void main(String[] args) throws IOException {
+//		 중첩 for문 예시 1부터 5까지 출력되는 문장을 5출 출력하기
+//		 11111
+//		 22222
+//		 33333
+//		 44444
+//		 55555
+		for(int j = 1; j <= 5; j++) { // 열
+			for(int i = 1; i <=5; i++) {
+				System.out.printf("%d",j); // j 가 i만큼 5번반복한다. 
+			}
+			System.out.println();
+		}
+		
+		// 0시 0분 부터 23시 59분까지 출력
+		for(int i = 0; i < 24; i++) {
+			for(int j = 0; j <= 59; j++) {
+				if(j == 0) {
+					System.out.println(i +"시");
+				} else {
+					System.out.println(i +"시" + j +"분");
+				}
+			}
+		}
+		/*
+		 한 줄에 별표(*)가 5번 출력, 줄수는 사용자가 입력한 수 만큼 출력
+		 한 줄에  별표 * 5개를 찍는 코드는
+		*/
+		for(int i = 1 ; i <= 5; i++ ) {
+			for(int j = 1; j <= 5; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		//한줄에 별표 문자를 입력된 줄 수와 칸 수 만큼 출력
+		// 단, 줄 수와 칸수가 일치하는 위치에는 줄 번호에 대한 정수가 추력
+		System.out.print("출력할 줄 수 : ");
+		Scanner sc = new Scanner(System.in);
+		int jool = sc.nextInt();
+		for(int i = 0 ; i < jool; i++) {
+			 for(int j = 0; j <= 4; j++) {
+				 if(i == j) {
+					 System.out.println(i);
+				 } else {
+					 System.out.print("*");
+				 }
+			 }
+			 System.out.println();
+		}
+	}
+}

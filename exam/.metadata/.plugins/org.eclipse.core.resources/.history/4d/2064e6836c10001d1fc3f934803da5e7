@@ -1,0 +1,42 @@
+package random;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class UpGame {
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Random r = new Random();
+		boolean bool = true;
+		int count = 0; // 변수 선언을 여기서 해줘야 2. GameScore 에서 사용 가능
+		int record = 100;
+		
+		while(bool) { // true 무한반복 
+			System.out.println(" === Up & Down Game === ");
+			System.out.println("1. GameStart");
+			System.out.println("2.GameScore");
+			System.out.println("3.End Game");
+			System.out.print("선택 > ");
+			int sel = sc.nextInt();
+			
+			switch(sel) {
+			case 1:
+				System.out.println("<< Game Start >>");
+				// 회차용 변수
+				count = 0; 
+				int cNum = r.nextInt(99) + 1;
+				
+				if(cNum > uNum) {
+					System.out.println("결과 >> UP");
+				}
+			}
+			
+			
+			
+		}
+		
+		
+		
+	}
+}

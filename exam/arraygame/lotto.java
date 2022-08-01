@@ -1,0 +1,102 @@
+package arraygame;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class lotto {
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Random r = new Random();
+		boolean flag = true;
+		int[] lottoNum = new int[6];
+		int[] comNum = new int[6];
+		int num = 0;
+		int result = 0;
+		
+		System.out.println("==== 로또 프로그램 ====");
+		for(int i = 0; i < comNum.length; i++) {
+			int random = r.nextInt(45) + 1; 
+			for(int k = 0; k < comNum.length; k++) {
+				if(comNum[k] == random) {
+					i--; // 중복이되면 감소시킴 
+					flag = false;
+					break; // 다시뽑음 
+				} else {
+					// 중복이 아니면 값 넣음 
+					flag = true;
+				}
+			}
+			if(flag) {
+				comNum[i] = random;
+			}
+		}
+		
+		// 로또프로그램에서 뽑은 숫자를 작은순서대로 나열  
+		for(int i = 0; i < comNum.length -1 ; i++) {
+			for(int j = 0; j < comNum.length - 1 - i; j++) {
+				if(comNum[j] > comNum[j + 1]) {
+					int tmp = comNum[j];
+					comNum[j] = comNum[j + 1];
+					comNum[j + 1] = tmp;
+				}
+			}
+		}
+		
+		// 내가 로또 번호 입력 
+		for(int i = 0; i < lottoNum.length; i++) {
+			System.out.printf("%d 번째 번호 입력 : ", i + 1);
+			num = sc.nextInt();
+			for(int k = 0; k < lottoNum.length; k++) {
+				// 숫자가 이미 있으면 
+				if(lottoNum[k] == num) {
+					System.out.println("중복된 숫자입니다.");
+					i--; // 중복된 숫자는 다시 입력하게 한다.
+					flag = false;
+					break;
+				} else {
+					// 중복이 아니면 
+					flag = true;
+				}
+			}
+			// 중복이 아니므로 값을 넣는다. 
+			if(flag) {
+				lottoNum[i] = num;
+			}
+		}
+		// 내가 입력한 로또번호를 작은 순서대로 나열
+		for(int i = 0; i < lottoNum.length-1; i++) {
+			for(int j = 0; j < lottoNum.length-1 -i; j++) {
+				if(lottoNum[j] > lottoNum[j + 1]) {
+					int tmp = lottoNum[j];
+					lottoNum[j] = lottoNum[j+1];
+					lottoNum[j+1] = tmp;
+				}
+			}
+		// 내가 입력한 로또번호 출력
+		for(int j = 0; j < lottoNum.length; j++) {
+			System.out.print(lottoNum[j] + " ");
+		}
+		System.out.println();
+		// 컴퓨터의 랜덤으로 추천한 로또번호 출력
+		for(int j = 0; j < comNum.length; j++) {
+			System.out.print(comNum[j] + " ");
+		}
+		System.out.println();
+		
+		// 내가쓴번호랑 컴퓨터의 번호랑 같은 경우 
+		for(i = 0; i < lottoNum.length; i++) {
+			for(int j = 0; j < comNum.length; j++) {
+			
+				if(comNum[i] == lottoNum[j]) {
+					// 맞은 개수 
+					result++;
+					break;
+				}
+			}
+		}
+		// 맞은 개수 출력 
+		System.out.println("맞은 개수 : " + result);
+		}
+	}
+}

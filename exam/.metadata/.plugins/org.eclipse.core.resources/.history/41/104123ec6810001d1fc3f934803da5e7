@@ -1,0 +1,11 @@
+package random;
+
+import java.util.Random;
+
+public class RandomGame {
+	
+	public static void main(String[] args) {
+		Random r = new Random();
+		
+	}
+}

@@ -1,0 +1,25 @@
+package 배열최대값최소값정렬;
+
+import java.util.Scanner;
+
+public class ArrayTest2 {
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int max = 0;
+		int min = 0;
+		int[] array = new int[] {1,2,3,4,5};
+		for(int i = 0; i < array.length; i++) {
+			
+			if(max < array[i]) {
+				max = array[i];
+			} else if(min > array[i]) {
+				min = array[i];
+			}
+			
+			System.out.println("큰수 : " + max);
+			System.out.println("작은수 : " + min);
+		}
+	}
+}	

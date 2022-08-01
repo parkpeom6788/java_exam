@@ -1,0 +1,15 @@
+package ex05method;
+
+public class E05MethodType04_1 {
+	
+	public static void main(String[] args) {
+		
+		int sumOfAge = getTotalAge(5);
+		System.out.println("입력받은 나의의 합은 ? : " + sumOfAge);
+	}
+	
+	static int getTotalAge(int parsonCnt) {
+		Scanner sc = new Scanner(System.in);
+		
+	}
+}

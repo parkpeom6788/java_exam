@@ -1,0 +1,12 @@
+package java_exam2;
+
+public class flag {
+	
+	public static void main(String[] args) {
+		
+		// flag 로 홀 , 짝
+		
+		
+		
+	}
+}

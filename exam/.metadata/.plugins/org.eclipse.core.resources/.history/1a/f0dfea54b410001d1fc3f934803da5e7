@@ -1,0 +1,19 @@
+package 배열최대값최소값정렬;
+
+public class 최소값과최대값2 {
+	
+	public static void main(String[] args) {
+		int[] array = new int[] {12,54,67,65,45};
+		
+		
+		for(int i = 0; i < array.length-1; i++) {
+			for(int j = 0; j < array.length-1-i; j++) {
+				
+				if(array[i] > array[i+1]) {
+					
+				}
+			}
+		}
+		
+	}
+}

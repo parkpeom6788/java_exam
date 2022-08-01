@@ -1,0 +1,13 @@
+package 자바기초배열3;
+
+public class E02ArrayAndMethod {
+	
+	public static void main(String[] args) {
+		
+		// 배열을 선언과 동시에 초기화 , 요소의 갯수의 의해 크기 결정됨
+		int[] arr = {1 ,2 , 3 ,4 ,5 };
+		// 배열 변수만 선언한 상태로 아직 참조하는 배열이 없음
+		
+		
+	}
+}

@@ -1,0 +1,13 @@
+package 배열최대값최소값정렬;
+
+import java.util.Scanner;
+
+public class ArrayTest2 {
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		
+	}
+}	

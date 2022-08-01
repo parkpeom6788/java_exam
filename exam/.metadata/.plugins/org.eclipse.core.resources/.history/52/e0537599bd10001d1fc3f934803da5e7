@@ -1,0 +1,22 @@
+package 재귀함수;
+
+import java.util.Scanner;
+
+public class CircleTest {
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("원의 반지름 : ");
+		int r = sc.nextInt();
+		float round = circleArea(r);
+		circircleRound(round);
+	}
+	static float  circleArea(int r) {
+		System.out.printf(" 원의 둘레(5.0) : %.1f \n" ,  + 2 * 3.14 * r);
+		return r * r * 3.14f;
+	}
+	static void circircleRound(float round) {
+		System.out.println("원의 넓이 : " + round * round * 3.14);
+	}
+}

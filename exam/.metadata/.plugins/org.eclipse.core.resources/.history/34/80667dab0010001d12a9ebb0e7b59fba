@@ -1,0 +1,19 @@
+package java_exam2;
+
+import java.io.IOException;
+
+public class ex11 {
+	
+	public static void main(String[] args) throws IOException {
+		
+		int number = System.in.read();
+		
+		// 0 은 아스키코드  48부터 ! 
+		
+		if(number >= 48 && number <= 57) {
+			
+		}
+		
+		
+	}
+}

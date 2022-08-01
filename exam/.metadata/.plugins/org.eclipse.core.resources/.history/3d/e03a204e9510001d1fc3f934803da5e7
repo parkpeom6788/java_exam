@@ -1,0 +1,15 @@
+package ex05method;
+
+public class E03MethodType02_1 {
+	
+	static int noParamYesReturn() {
+		int sum = 0;
+		for(int i = 1; i <= 10; i++) {
+			sum += i;
+		}
+		return sum;
+	}
+	public static void main(String[] args) {
+		
+	}
+}

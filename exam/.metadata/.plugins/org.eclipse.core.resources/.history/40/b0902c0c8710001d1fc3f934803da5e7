@@ -1,0 +1,17 @@
+package ex05method;
+
+/* 메소드 규칙
+ *  java 에서 main 메소드는 무조건 publis static void 로 선언하기로 약속 되었다
+ * 
+ * 
+ */
+public class E01MethodBasic {
+	
+	
+	
+	public static void main(String[] args) {
+		
+		
+		
+	}
+}

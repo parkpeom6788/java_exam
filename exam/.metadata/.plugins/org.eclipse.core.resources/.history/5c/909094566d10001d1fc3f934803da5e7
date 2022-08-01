@@ -1,0 +1,57 @@
+package random;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class UpGame {
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Random r = new Random();
+		boolean bool = true;
+		int count = 0; // 변수 선언을 여기서 해줘야 2. GameScore 에서 사용 가능
+		int record = 100;
+		
+		while(bool) { // true 무한반복 
+			System.out.println(" === Up & Down Game === ");
+			System.out.println("1. GameStart");
+			System.out.println("2.GameScore");
+			System.out.println("3.End Game");
+			System.out.print("선택 > ");
+			int sel = sc.nextInt();
+			
+			switch(sel) {
+			case 1:
+				System.out.println("<< Game Start >>");
+				// 회차용 변수
+				count = 0; 
+				int cNum = r.nextInt(99) + 1;
+				while(true) {
+					System.out.println("<< " + (++count) + "회차 >> ");
+					System.out.print("Input Number : ");
+					int uNum = sc.nextInt(); // 사용자가 입력한 번호 
+					if(cNum > uNum) {
+						System.out.println("결과 >> UP");
+					} else if(cNum < uNum) {
+						System.out.println("결과 >> DOWN");
+					} else if(cNum == uNum) {
+						System.out.println("정답");
+					}
+					// record는 최고 기록을 나타내는 변수
+					if( record > count) {
+						record = count; break;
+					}
+				}
+			case 2: // 게임점수 확인 
+				
+				System.out.println("<< Game Score >>");
+				System.out.println("기록 : " + record + "회");
+				break;
+			
+			case 3: // 종료 
+				bool = false;
+				break;
+			}
+		}
+	}
+}

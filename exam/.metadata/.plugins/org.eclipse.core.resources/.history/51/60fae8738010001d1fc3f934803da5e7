@@ -1,0 +1,20 @@
+package control_exam;
+
+public class ex1 {
+	
+	public static void main(String[] args) {
+		
+		// num1의 50을 초기화, num2에 100을 초기화
+		// 한 후 큰 수에서 작은 수를 빼는 프로그램을 만드시오.
+		
+		int num1 = 50;
+		int num2 = 100;
+		int reuslt = 0;
+		if(num1 > num2) {
+		  result = num1 - num2;
+		} else {
+		  result = num2 - num1;
+		}
+		
+	}
+}

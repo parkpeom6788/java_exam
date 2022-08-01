@@ -1,0 +1,27 @@
+package 재귀함수;
+
+public class E08RecursiveMethod {
+/*
+	  재귀함수 (Recursive method)
+	  : 하나의 함수에서 자신을 다시 호출하여 작업을 수행하는 방식으로
+	  	문제를 해결하는 함수를 말한다
+	
+		재귀함수를 이용한 팩토리얼 
+ */
+	public static void main(String[] args) {
+		System.out.println("재귀함수를 이용한 팩토리얼 구하기");
+		System.out.println("4factorial" + factorial(4));
+		System.out.println("10factorial" + factorial(10));
+	}
+	static int factorial(int number) {
+		int result;
+		if(number == 1) { // 1이 되면 1리턴 
+			result = 1;
+		} else {
+			//       4  x  3 x  2  x  1 
+			result = number * factorial(number-1); // 자기자신 호출
+		}
+		System.out.println("계산 과정 : number=" + number + ",result = " + result);
+		return result;
+	}
+}

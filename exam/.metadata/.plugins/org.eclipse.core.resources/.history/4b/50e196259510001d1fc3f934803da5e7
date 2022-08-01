@@ -1,0 +1,12 @@
+package ex05method;
+
+public class E03MethodType02_1 {
+	
+	static int noParamYesReturn() {
+		
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

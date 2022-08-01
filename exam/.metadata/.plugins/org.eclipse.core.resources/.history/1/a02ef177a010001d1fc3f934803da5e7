@@ -1,0 +1,14 @@
+package 배열최대값최소값정렬;
+
+public class ArrayTest {
+	
+	public static void main(String[] args) {
+		
+		int[] array = new int[] {1,2,3,4,5};
+		int max = array[0];
+		int min =  array[0];
+		
+		
+		
+	}
+}

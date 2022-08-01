@@ -1,0 +1,9 @@
+package java_exam2;
+
+public class ex11 {
+	
+	public static void main(String[] args) {
+		
+		System.in.read();
+	}
+}

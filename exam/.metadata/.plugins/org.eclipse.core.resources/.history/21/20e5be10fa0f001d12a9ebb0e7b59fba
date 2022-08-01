@@ -1,0 +1,18 @@
+package java_exam2;
+
+import java.io.IOException;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class ex1 {
+	
+	public static void main(String[] args) throws IOException {
+		
+		int user;
+		
+		System.out.printf("문자 하나를 입력하세요 : ");
+		
+		user = System.in.read();
+		
+	}
+}

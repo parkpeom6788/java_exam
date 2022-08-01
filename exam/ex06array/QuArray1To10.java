@@ -1,0 +1,18 @@
+package ex06array;
+
+public class QuArray1To10 {
+	
+	public static void main(String[] args) {
+	//배열의 크기가 10인 배열을 선언하고
+	//1~10까지 순서대로 값을 넣은 후 배열과 배열의 값의 합을 출력하시오.
+		int[] array = new int[10];
+		int sum = 0;
+		for(int i = 0; i < array.length; i++) {
+			array[i] = i + 1;
+		}
+		for(int e : array) {
+			sum += e;
+		}
+		System.out.println("1~10까지의 합 : " + sum);
+	}
+}

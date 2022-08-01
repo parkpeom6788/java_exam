@@ -1,0 +1,19 @@
+package array;
+
+import java.util.Scanner;
+
+public class ArrayGame2 {
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int[] array = new int[10];
+		boolean flag = true;
+		
+		System.out.println("====모텔 관리 프로그램====");
+		
+		while(flag) {
+			
+		}
+	}
+}

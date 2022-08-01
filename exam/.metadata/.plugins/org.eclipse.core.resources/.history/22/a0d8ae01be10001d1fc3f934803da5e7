@@ -1,0 +1,22 @@
+package 소수인지아닌지판별;
+
+public class QuFindPrimeNumber {
+	
+	public static boolean isPrimeNumber(int num) {
+		
+		if(num == 1) {
+			// 1은 소수가 아니므로 무조건 false 반환 
+			return false;
+		}
+		
+		else {
+			
+			
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

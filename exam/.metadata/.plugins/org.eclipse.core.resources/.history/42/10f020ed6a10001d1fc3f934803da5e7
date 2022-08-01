@@ -1,0 +1,16 @@
+package random;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class RandomGame2 {
+	
+	public static void main(String[] args) {
+		Random r = new Random();
+		Scanner sc = new Scanner(System.in);
+		
+		int com = r.nextInt(3)+1;
+		
+		
+	}
+}

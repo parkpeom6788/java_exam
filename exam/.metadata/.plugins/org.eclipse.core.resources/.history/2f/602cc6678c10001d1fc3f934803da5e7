@@ -1,0 +1,46 @@
+package arraygame;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class lotto {
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Random r = new Random();
+		boolean flag = true;
+		int[] lottoNum = new int[6];
+		int[] comNum = new int[6];
+		
+		int num = 0;
+		int result = 0;
+		System.out.println("==== 로또 프로그램 ====");
+		for(int i = 0; i < comNum.length; i++) {
+			int random = r.nextInt(45) + 1; 
+			for(int k = 0; k < comNum.length; k++) {
+				if(comNum[k] == random) {
+					i--;
+					flag = false;
+					break;
+				} else {
+					flag = true;
+				}
+			}
+			if(flag) {
+				comNum[i] = random;
+			}
+		}
+		for(int i = 0; i < comNum.length -1 ; i++) {
+			for(int j = 0; j < comNum.length - 1 - i; j++) {
+				if(comNum[j] > comNum[j + 1]) {
+					int tmp = comNum[j];
+					comNum[j] = comNum[j + 1];
+					comNum[j + 1] = tmp;
+				}
+			}
+		}
+		
+		
+		
+	}
+}

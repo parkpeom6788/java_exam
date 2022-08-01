@@ -1,0 +1,17 @@
+package 배열최대값최소값정렬;
+
+public class 배열정렬 {
+	
+	public static void main(String[] args) {
+		
+		int[] array = new int[] {34,54,23,12,54};
+		
+		for(int i = 0; i < array.length - 1; i++ ) {
+			for(int j = 0; j < array.length - i - 1; j++) {
+				int temp = array[i];
+				
+			}
+		}
+		
+	}
+}	

@@ -1,0 +1,21 @@
+package ex05method;
+
+public class E07Overloading {
+	
+	/*
+	 	Method overLoading(메소드 오버로딩)
+	 	:동일한 이름의 메소드를 두개 이상 정의하는 것을 말한다
+	 	매개변수 갯수가 다르거나 자료형이 다를때 성립한다
+	 	반환타입만 다른 것은 허용하지 않는다
+	 	컴파일러 메소드 호출시 전달되는 파라미터 (인자)를 통해
+	 	호출할 메소드를 구분한다.
+	 */
+	public static void person(int juminNum,int milNum) {
+		
+	}
+	
+	public static void main(String[] args) {
+
+	}
+
+}
